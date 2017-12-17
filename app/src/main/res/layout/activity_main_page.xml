@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<im.quar.autolayout.view.AutoFrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <im.quar.autolayout.view.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="bottom"
+        >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#cccccc"/>
+        <im.quar.autolayout.view.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="bottom"
+            >
+            <im.quar.autolayout.view.AutoLinearLayout
+                android:id="@+id/socialTabLayout"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="@dimen/actionBarSize"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:gravity="center">
+                <im.quar.autolayout.view.AutoLinearLayout
+                                                          android:orientation="vertical"
+                                                          android:layout_width="match_parent"
+                                                          android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/socialTabImageView"
+                        android:src="@drawable/tab_report"
+                        android:layout_width="70px"
+                        android:layout_height="70px"
+                        android:layout_gravity="center"
+                        android:gravity="center"/>
+
+                    <TextView
+                        android:id="@+id/socialTabTextView"
+                        android:text="首页"
+                        android:gravity="center"
+                        android:textSize="32px"
+                        android:textColor="@drawable/tab_title_color"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </im.quar.autolayout.view.AutoLinearLayout>
+            </im.quar.autolayout.view.AutoLinearLayout>
+
+            <im.quar.autolayout.view.AutoLinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="@dimen/actionBarSize"
+                android:orientation="vertical"
+                >
+            </im.quar.autolayout.view.AutoLinearLayout>
+
+            <im.quar.autolayout.view.AutoLinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:id="@+id/mineTabLayout"
+                android:layout_height="@dimen/actionBarSize"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:gravity="center">
+                <im.quar.autolayout.view.AutoLinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/mineTabImageView"
+                        android:src="@drawable/tab_report"
+                        android:layout_width="70px"
+                        android:layout_height="70px"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center_horizontal"/>
+
+                    <TextView
+                        android:id="@+id/mineTabTextView"
+                        android:text="首页"
+                        android:textSize="32px"
+                        android:textColor="@drawable/tab_title_color"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center_horizontal"/>
+                </im.quar.autolayout.view.AutoLinearLayout>
+            </im.quar.autolayout.view.AutoLinearLayout>
+        </im.quar.autolayout.view.AutoLinearLayout>
+        </im.quar.autolayout.view.AutoLinearLayout>
+
+
+    </LinearLayout>
+        <im.quar.autolayout.view.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            android:orientation="horizontal"
+            android:clickable="false"
+            android:layout_gravity="bottom"
+            android:gravity="bottom">
+            <im.quar.autolayout.view.AutoLinearLayout
+                android:layout_width="0dp"
+                android:layout_height="1px"
+                android:layout_weight="2"
+                android:background="#00000000"
+                android:clickable="false"></im.quar.autolayout.view.AutoLinearLayout>
+
+            <im.quar.autolayout.view.AutoLinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="@dimen/tabBarSize"
+                android:clickable="true"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:paddingBottom="3dp">
+                <im.quar.autolayout.view.AutoLinearLayout
+                    android:id="@+id/sendTagLayout"
+                    android:layout_width="@dimen/tabBarSize"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/tabbar_compose_bg_add_selector"
+                    android:gravity="center"
+                    >
+                    <ImageView
+                        android:layout_width="75px"
+                        android:layout_height="75px"
+                        android:src="@drawable/tabbar_compose_icon_add_selector"/>
+                </im.quar.autolayout.view.AutoLinearLayout>
+            </im.quar.autolayout.view.AutoLinearLayout>
+            <im.quar.autolayout.view.AutoLinearLayout
+                android:layout_width="0dp"
+                android:layout_height="1px"
+                android:layout_weight="2"
+                android:background="#00000000"></im.quar.autolayout.view.AutoLinearLayout>
+        </im.quar.autolayout.view.AutoLinearLayout>
+
+
+    <include layout="@layout/view_add"/>
+</im.quar.autolayout.view.AutoFrameLayout>

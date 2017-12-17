@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="center"
+              android:orientation="vertical">
+
+    <im.quar.autolayout.view.AutoFrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:background="@color/colorPrimary">
+        <net.lucode.hackware.magicindicator.MagicIndicator
+            android:id="@+id/magic_indicator2"
+            android:layout_width="wrap_content"
+            android:layout_height="135px"
+            android:layout_gravity="center_horizontal" />
+        <im.quar.autolayout.view.AutoLinearLayout
+            android:id="@+id/messageLayout"
+            android:layout_width="135px"
+            android:layout_height="135px"
+            android:layout_gravity="right|center_vertical"
+            android:gravity="center">
+            <com.yoho.glide.GlideImageView
+                android:layout_width="75px"
+                android:layout_height="75px"
+                android:src="@drawable/tab_home"
+                android:gravity="center"/>
+        </im.quar.autolayout.view.AutoLinearLayout>
+    </im.quar.autolayout.view.AutoFrameLayout>
+     <com.iyoho.social.view.CustomViewPager
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:id="@+id/view_pager"></com.iyoho.social.view.CustomViewPager>
+</LinearLayout>

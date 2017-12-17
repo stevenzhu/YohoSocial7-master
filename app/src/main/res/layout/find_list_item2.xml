@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<im.quar.autolayout.view.AutoLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <im.quar.autolayout.view.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="30px"
+        android:orientation="vertical">
+<im.quar.autolayout.view.AutoLinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="100px"
+    android:orientation="horizontal"
+    android:gravity="center_vertical">
+    <com.yoho.glide.GlideImageView
+        android:id="@+id/userHeadPic"
+        android:layout_width="70px"
+        android:layout_height="70px"
+        app:shape_type="circle"
+        />
+    <com.iyoho.social.view.TypeFaceTextView
+        android:id="@+id/userNickName"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="userNickName"
+        android:layout_marginLeft="10px"
+        android:gravity="center_vertical"
+        />
+</im.quar.autolayout.view.AutoLinearLayout>
+    <im.quar.autolayout.view.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="400px"
+        android:orientation="vertical"
+        >
+        <com.iyoho.social.view.TypeFaceTextView
+            android:id="@+id/themeTitle"
+            android:layout_width="match_parent"
+            android:layout_height="50px"
+            android:singleLine="true"
+            android:textSize="34px"
+            android:textColor="#666666"
+            android:text=""/>
+
+        <im.quar.autolayout.view.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+            <com.yoho.glide.GlideImageView
+                android:id="@+id/themePic0"
+                android:layout_width="300px"
+                android:layout_height="300px"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"/>
+            <com.yoho.glide.GlideImageView
+                android:id="@+id/themePic1"
+                android:layout_width="300px"
+                android:layout_height="300px"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"/>
+            <com.yoho.glide.GlideImageView
+                android:id="@+id/themePic2"
+                android:layout_width="300px"
+                android:layout_height="300px"/>
+
+        </im.quar.autolayout.view.AutoLinearLayout>
+
+        <com.iyoho.social.view.TypeFaceTextView
+            android:id="@+id/themeContent"
+            android:layout_width="match_parent"
+            android:layout_height="50px"
+            android:textSize="29px"
+            android:textColor="#999999"
+            android:text=""/>
+    </im.quar.autolayout.view.AutoLinearLayout>
+
+    <im.quar.autolayout.view.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+        <com.yoho.glide.GlideImageView
+            android:id="@+id/locationPic"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:src="@drawable/icon_back"
+            />
+        <com.iyoho.social.view.TypeFaceTextView
+            android:id="@+id/themeAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="人民广场"
+            android:layout_marginLeft="10px"
+            android:gravity="center_vertical"
+            />
+        <com.iyoho.social.view.TypeFaceTextView
+            android:id="@+id/themeTime"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="2017.12.25 17:00"
+            android:gravity="center_vertical|right"
+            />
+    </im.quar.autolayout.view.AutoLinearLayout>
+    </im.quar.autolayout.view.AutoLinearLayout>
+</im.quar.autolayout.view.AutoLinearLayout>
